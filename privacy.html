@@ -4,116 +4,76 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MouseLens Privacy Policy</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f7f8fb;
-      --fg: #172033;
-      --muted: #5c6578;
-      --panel: #ffffff;
-      --border: #d9deea;
-      --accent: #2f6df6;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #101420;
-        --fg: #eef2fb;
-        --muted: #aeb6c8;
-        --panel: #171d2b;
-        --border: #30384c;
-        --accent: #7aa2ff;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    main {
-      width: min(820px, calc(100% - 32px));
-      margin: 48px auto;
-      padding: 36px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(30px, 5vw, 44px);
-      line-height: 1.1;
-      letter-spacing: 0;
-    }
-
-    h2 {
-      margin: 30px 0 8px;
-      font-size: 20px;
-      line-height: 1.3;
-      letter-spacing: 0;
-    }
-
-    p,
-    li {
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    ul {
-      padding-left: 22px;
-    }
-
-    .updated {
-      margin: 0 0 28px;
-      color: var(--muted);
-    }
-  </style>
+  <link rel="icon" href="assets/icon-128.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>MouseLens Privacy Policy</h1>
-    <p class="updated">Effective date: July 20, 2026</p>
+  <div class="page">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="MouseLens home">
+          <img src="assets/icon-128.png" alt="">
+          <span>MouseLens</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="support.html">Support</a>
+          <a class="button primary" href="https://apps.apple.com/app/id6782615815">Mac App Store</a>
+        </nav>
+      </div>
+    </header>
 
-    <p>MouseLens is a local-first macOS screen recording and editing app.</p>
+    <main class="content-page">
+      <div class="container">
+        <article class="content-card">
+          <span class="eyebrow">Local-first macOS app</span>
+          <h1>MouseLens Privacy Policy</h1>
+          <p class="updated">Effective date: August 10, 2026</p>
 
-    <h2>Data Collection</h2>
-    <p>MouseLens does not collect, sell, or share personal data.</p>
-    <p>MouseLens does not require an account and does not upload your recordings to a server.</p>
+          <p>MouseLens is a local-first macOS screen recording and editing app. It is designed to create polished screen demos without requiring an account or uploading your recordings to a server.</p>
 
-    <h2>Recordings and Project Files</h2>
-    <p>When you record with MouseLens, screen or window video, optional audio, optional camera video, pointer events, project metadata, and exported videos or GIFs are stored locally on your Mac.</p>
-    <p>You control these files and can delete them from your Mac at any time.</p>
+          <h2>Data Collection</h2>
+          <p>MouseLens does not collect, sell, or share personal data.</p>
+          <p>MouseLens does not require an account and does not upload your recordings to a server.</p>
 
-    <h2>Permissions</h2>
-    <p>MouseLens may request macOS permissions for:</p>
-    <ul>
-      <li>Screen Recording: to capture the screen or selected windows.</li>
-      <li>Microphone: to include microphone audio when enabled.</li>
-      <li>Camera: to include the presenter camera bubble when enabled.</li>
-    </ul>
-    <p>These permissions are used only for the app features you choose to use.</p>
+          <h2>Recordings and Project Files</h2>
+          <p>When you record with MouseLens, screen or window video, optional audio, optional camera video, pointer events, captions, project metadata, and exported videos or GIFs are stored locally on your Mac.</p>
+          <p>You control these files and can delete them from your Mac at any time.</p>
 
-    <h2>Network Use</h2>
-    <p>MouseLens does not use network services for recording, editing, or exporting videos.</p>
+          <h2>Permissions</h2>
+          <p>MouseLens may request macOS permissions for:</p>
+          <ul>
+            <li>Screen Recording: to capture the screen or selected windows.</li>
+            <li>Microphone: to include microphone audio and generate captions when enabled.</li>
+            <li>Camera: to include the presenter camera bubble when enabled.</li>
+            <li>Speech Recognition: to generate editable captions from recorded speech when requested.</li>
+          </ul>
+          <p>These permissions are used only for the app features you choose to use.</p>
 
-    <h2>Third Parties</h2>
-    <p>MouseLens does not share recordings or project data with third parties.</p>
+          <h2>Network Use</h2>
+          <p>MouseLens does not use network services for recording, editing, or exporting videos.</p>
 
-    <h2>Contact</h2>
-    <p>If you have privacy questions, contact <a href="mailto:guoxinling_xisu@163.com">guoxinling_xisu@163.com</a>.</p>
+          <h2>Third Parties</h2>
+          <p>MouseLens does not share recordings or project data with third parties.</p>
 
-    <h2>Changes</h2>
-    <p>This policy may be updated as MouseLens changes. If future versions add accounts, cloud sync, analytics, crash reporting, or other network features, this policy and the App Store privacy answers will be updated before release.</p>
-  </main>
+          <h2>Contact</h2>
+          <p>If you have privacy questions, contact <a href="mailto:guoxinling_xisu@163.com">guoxinling_xisu@163.com</a>.</p>
+
+          <h2>Changes</h2>
+          <p>This policy may be updated as MouseLens changes. If future versions add accounts, cloud sync, analytics, crash reporting, or other network features, this policy and the App Store privacy answers will be updated before release.</p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2026 Guoxinling. MouseLens for macOS.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="support.html">Support</a>
+          <a href="mailto:guoxinling_xisu@163.com">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

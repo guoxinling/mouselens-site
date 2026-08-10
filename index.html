@@ -3,94 +3,177 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MouseLens</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f7f8fb;
-      --fg: #172033;
-      --muted: #5c6578;
-      --panel: #ffffff;
-      --border: #d9deea;
-      --accent: #2f6df6;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #101420;
-        --fg: #eef2fb;
-        --muted: #aeb6c8;
-        --panel: #171d2b;
-        --border: #30384c;
-        --accent: #7aa2ff;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    main {
-      width: min(820px, calc(100% - 32px));
-      margin: 48px auto;
-      padding: 36px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(34px, 6vw, 56px);
-      line-height: 1.05;
-      letter-spacing: 0;
-    }
-
-    p {
-      color: var(--muted);
-      max-width: 640px;
-    }
-
-    nav {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 28px;
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      min-height: 44px;
-      padding: 0 16px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      background: color-mix(in srgb, var(--accent) 10%, transparent);
-    }
-  </style>
+  <meta name="description" content="MouseLens is a macOS screen recorder for polished demos with smart zoom, captions, presenter camera, cursor styles, MP4 export, and GIF export.">
+  <title>MouseLens — Polished screen recordings, fast</title>
+  <link rel="icon" href="assets/icon-128.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>MouseLens</h1>
-    <p>MouseLens is a macOS screen recording and editing app for creating polished walkthrough videos with cursor reconstruction, click feedback, zoom moments, trimming, backgrounds, padding, rounded corners, and MP4 export.</p>
+  <div class="page">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="MouseLens home">
+          <img src="assets/icon-128.png" alt="">
+          <span>MouseLens</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#privacy">Privacy</a>
+          <a class="button primary" href="https://apps.apple.com/app/id6782615815">Mac App Store</a>
+        </nav>
+      </div>
+    </header>
 
-    <nav>
-      <a class="button" href="support.html">Support</a>
-      <a class="button" href="privacy.html">Privacy Policy</a>
-    </nav>
-  </main>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Native macOS screen demos</span>
+            <h1>Beautiful screen demos, made automatically.</h1>
+            <p class="hero-copy">MouseLens turns ordinary screen recordings into polished walkthroughs with smart zoom, clear cursor emphasis, captions, presenter camera, and MP4 or GIF export.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="https://apps.apple.com/app/id6782615815">Download on the Mac App Store</a>
+              <a class="button secondary" href="#workflow">See how it works</a>
+            </div>
+            <div class="hero-notes">
+              <span>Local-first</span>
+              <span>macOS 14+</span>
+              <span>No account required</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="MouseLens editor preview">
+            <div class="product-frame">
+              <img src="assets/preview.png" alt="MouseLens editor showing a polished screen recording preview">
+            </div>
+            <div class="floating-panel">
+              <p class="panel-kicker">Live editor</p>
+              <p class="panel-title">Adjust zoom, captions, presenter camera, backgrounds, and export without opening a heavy video editor.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Everything focused on clearer demos.</h2>
+              <p class="section-lede">MouseLens stays intentionally narrow: record interaction, clarify the pointer, guide attention, and export fast.</p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card-icon">⌖</div>
+              <h3>Smart Zoom</h3>
+              <p>Automatically guides the viewer toward clicks and important areas, with editable zoom segments when you need control.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">◉</div>
+              <h3>Cursor Styles</h3>
+              <p>Use clear system arrows or expressive pointer styles. Cursor size and position stay consistent in preview and export.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">▣</div>
+              <h3>Presenter Camera</h3>
+              <p>Add a mirrored camera bubble, place it before recording, and keep that exact layout through preview and export.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">Aa</div>
+              <h3>Captions</h3>
+              <p>Generate editable captions from recorded speech and burn them into MP4 or GIF exports when needed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Record. Polish. Share.</h2>
+              <p class="section-lede">A fast workflow for product demos, tutorials, release notes, support replies, and social clips.</p>
+            </div>
+          </div>
+
+          <div class="workflow">
+            <article class="step">
+              <h3>Record</h3>
+              <p>Capture a screen or window, with optional microphone audio and presenter camera.</p>
+            </article>
+            <article class="step">
+              <h3>Polish</h3>
+              <p>Review immediately, trim the clip, adjust backgrounds, zoom moments, captions, and cursor style.</p>
+            </article>
+            <article class="step">
+              <h3>Share</h3>
+              <p>Export crisp MP4 videos or lightweight GIFs for docs, changelogs, websites, and social posts.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="showcase">
+            <article class="showcase-card">
+              <img src="assets/zoom-track.png" alt="MouseLens zoom track in the editor">
+              <div class="showcase-copy">
+                <h3>Auto zoom with manual control</h3>
+                <p>Let MouseLens create focus moments automatically, then split, delete, or add zoom segments on the timeline.</p>
+              </div>
+            </article>
+            <article class="showcase-card">
+              <img src="assets/presenter.png" alt="MouseLens presenter camera controls">
+              <div class="showcase-copy">
+                <h3>Camera bubble that stays where you put it</h3>
+                <p>Place your presenter bubble before recording and keep it consistent while editing and exporting.</p>
+              </div>
+            </article>
+            <article class="showcase-card">
+              <img src="assets/export.png" alt="MouseLens export settings for MP4 and GIF">
+              <div class="showcase-copy">
+                <h3>Designed for MP4 and GIF</h3>
+                <p>Export high-quality MP4 for video platforms or GIF for short demos, issue reports, and release notes.</p>
+              </div>
+            </article>
+            <article class="showcase-card">
+              <img src="assets/preview.png" alt="MouseLens styled preview with background and cursor">
+              <div class="showcase-copy">
+                <h3>Preview matches export</h3>
+                <p>The editor uses the same visual rules for captions, cursor, presenter camera, backgrounds, and zoom.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="privacy">
+        <div class="container">
+          <div class="privacy-band">
+            <h2>Local-first by default.</h2>
+            <p>MouseLens does not require an account and does not upload recordings to a server. Your screen recordings, project files, pointer data, audio, camera video, and exports stay on your Mac unless you choose to share them.</p>
+            <div class="hero-actions">
+              <a class="button secondary" href="privacy.html">Read Privacy Policy</a>
+              <a class="button secondary" href="support.html">Get Support</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2026 Guoxinling. MouseLens for macOS.</div>
+        <div class="footer-links">
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="mailto:guoxinling_xisu@163.com">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
